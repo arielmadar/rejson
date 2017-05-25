@@ -1821,7 +1821,7 @@ int Module_CreateCommands(RedisModuleCtx *ctx) {
 
 int RedisModule_OnLoad(RedisModuleCtx *ctx) {
     // Register the module
-    if (RedisModule_Init(ctx, RLMODULE_NAME, 1, REDISMODULE_APIVER_1) == REDISMODULE_ERR)
+    if (RedisModule_Init(ctx, RLMODULE_NAME, 2, REDISMODULE_APIVER_1) == REDISMODULE_ERR)
         return REDISMODULE_ERR;
 
     // Register the JSON data type
