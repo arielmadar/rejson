@@ -1799,7 +1799,7 @@ int Module_CreateCommands(RedisModuleCtx *ctx) {
                                   1) == REDISMODULE_ERR)
         return REDISMODULE_ERR;
 
-    if (RedisModule_CreateCommand(ctx, "json.arrpop2", JSONArrPop_RedisCommand, "write", 1, 1, 1) ==
+    if (RedisModule_CreateCommand(ctx, "json.arrpop", JSONArrPop_RedisCommand, "write", 1, 1, 1) ==
         REDISMODULE_ERR)
         return REDISMODULE_ERR;
 
